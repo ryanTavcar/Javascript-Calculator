@@ -1,0 +1,140 @@
+html {
+    font-size: 60%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator {
+    width: 32rem;
+    height: auto;
+    box-shadow: 2px 2px 20px 10px rgb(190, 189, 189);
+    border-radius: 10px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.night-day-btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+    margin-left: 5px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.fa-moon {
+    transform: scale(1.5);
+    color: #424242;
+
+}
+
+.fa-moon:hover {
+    color: #FFFFFF;
+}
+
+.equation-log {
+    text-align: right;
+    padding: 10px 2.5rem 5px 0;
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #424242;
+}
+hr {
+    width: 10rem;
+    margin-left: 20rem;
+}
+
+.calculator-screen {
+    width: 100%;
+    background-color:#FFFFFF;
+    color: #424242;
+    border: none;
+    font-size: 4rem;
+    text-align: right;
+    padding-right: 2.5rem ;
+  }
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: auto;
+    height: auto;
+}
+
+.calculator-keys > button {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid rgb(238, 229, 229);
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #424242;
+    outline: none;
+}
+
+
+.all-clear {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#plus-minus, #calc-clear, #calc-percentage,
+#divide, #multiply, #minus, #plus {
+    background-color: #F1F1F1;   
+}
+
+#plus-minus:hover, #calc-clear:hover, #calc-percentage:hover,
+#divide:hover, #multiply:hover, #minus:hover, #plus:hover {
+    background-color: #FFFFFF;        
+}
+
+#equal-sign {
+    background-color: #9DBC7B;
+    grid-row-start: 5;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    border-radius: 0 0 10px 0;
+}
+#equal-sign:hover {
+    background-color: #F1F1F1;
+}
+
+#zero-btn {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border-radius: 0 0 0 10px;
+}
+
+.decimal {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+
+.calc-btn-num:hover, .del:hover, .decimal:hover{
+    background-color: #F1F1F1;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
